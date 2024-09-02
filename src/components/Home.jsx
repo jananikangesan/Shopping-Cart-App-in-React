@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
+import data from "../assets/products.json";
+import Product from './Product';
 
 const Home = () => {
+    const [products,setProducts]=useState(data);
+
   return (
-    <div>Home</div>
+
+    <div className="product-container">
+        {products.map((item)=>(
+          <Product key={item.id} product={item}/>
+        ))}
+    </div>
   )
 }
 
