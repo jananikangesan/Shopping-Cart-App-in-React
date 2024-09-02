@@ -1,9 +1,10 @@
 import React from 'react'; 
 import {Link} from 'react-router-dom';
+import "../css/Header.css"
 
 const Header = () => {
   return (
-    <div>
+    <div className='navbar'>
         <div className="logo">Food Cart</div>
         <ul>
             <li>
