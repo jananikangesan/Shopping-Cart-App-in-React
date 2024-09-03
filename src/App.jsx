@@ -5,6 +5,7 @@ import Home from './components/Home'
 import { createContext, useState } from 'react'
 import ViewCart from './components/ViewCart'
 import { cartContext } from './components/cartContext';
+import Footer from './components/Footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           </div>
         </BrowserRouter>
       </cartContext.Provider>
+      <Footer/>
       
     </>
   )

@@ -20,8 +20,14 @@
     height: 100%;
 
 }
-.cart-heading,.cart-amt
+.cart-heading
 {
     font-size: 20px;
     font-weight: 600;
+}
+.cart-amt{
+    font-size: 20px;
+    font-weight: 600;
+    background-color:rgb(225, 218, 209);
+    border: 1px solid #ccc;
 }

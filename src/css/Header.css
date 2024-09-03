@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px 2px;
 }
 
 .logo{
@@ -25,6 +25,7 @@
 .navbar ul li a{
     color: #fff;
     text-decoration:none;
+    padding: 10px;
 }
 
 .cart-count{

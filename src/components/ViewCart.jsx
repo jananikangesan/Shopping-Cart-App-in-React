@@ -10,6 +10,7 @@ const ViewCart = () => {
 
     useEffect(()=>{
         setTotal(cart.reduce((acc,curr)=>acc+parseInt(curr.amt),0))
+        
     },[cart]);
 
   return (
@@ -25,6 +26,7 @@ const ViewCart = () => {
                    
                         <div className="cart-product-details">
                             <h3>{product.name}</h3>
+                            <p>Shop: {product.shop}</p>
                             <p>Price Rs: {product.amt}</p>
                         </div>
                     </div>
