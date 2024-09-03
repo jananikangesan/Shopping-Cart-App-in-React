@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import "../css/Product.css";
 import { cartContext } from './cartContext';
-
+import Popup from 'reactjs-popup';
 
 const Product = ({product}) => {
 
   const {cart,setCart}=useContext(cartContext);
+
+  const productName=product.name;
 
   const name=product.name.length>21 ?product.name.substring(0,20)+"..  ":product.name;
   
@@ -18,7 +20,20 @@ const Product = ({product}) => {
   return (
     <div className='product'>
        <div className="img">
-        <img src={`${product.pic}`} alt={product.name}/>
+        <Popup trigger={
+           <img src={`${product.pic}`} alt={product.name}/>
+        } position="center">
+
+          <div className='pop-up'>
+            <img src={`${product.pic}`} alt={product.name}/>
+            <h4>{productName}</h4>
+            <p>Shop: {product.shop}</p>
+            <p>Food Type: {product.ftype}</p>
+            <p>Price Rs:{product.amt}</p>
+          </div>
+
+        </Popup>
+       
        </div>
 
        <div className="details">

@@ -44,3 +44,25 @@
 .btnRemove{
     background-color:#cf3d3d !important;
 }
+.pop-up{
+    height: 450px;
+    width: 350px;
+    background-color: #f5e2e2;
+}
+.pop-up img{
+    height: 60%;
+    width:100%;
+ }
+ .pop-up p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.pop-up h4{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

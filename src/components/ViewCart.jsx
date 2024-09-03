@@ -26,7 +26,6 @@ const ViewCart = () => {
                    
                         <div className="cart-product-details">
                             <h3>{product.name}</h3>
-                            <p>Shop: {product.shop}</p>
                             <p>Price Rs: {product.amt}</p>
                         </div>
                     </div>
