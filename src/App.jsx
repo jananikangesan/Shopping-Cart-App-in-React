@@ -4,8 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import { createContext, useState } from 'react'
 import ViewCart from './components/ViewCart'
-
-export const cartContext=createContext();
+import { cartContext } from './components/cartContext';
 
 function App() {
 
