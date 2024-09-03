@@ -26,3 +26,15 @@
     color: #fff;
     text-decoration:none;
 }
+
+.cart-count{
+    height: 20px;
+    width: 20px;
+    display:inline-block;
+    background-color: rgb(26, 209, 47);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    
+}

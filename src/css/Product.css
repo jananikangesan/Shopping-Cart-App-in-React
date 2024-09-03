@@ -41,3 +41,6 @@
 .details button:hover{
     background-color:rgb(2,104,104) ;
 }
+.btnRemove{
+    background-color:#cf3d3d !important;
+}
