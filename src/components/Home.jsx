@@ -3,14 +3,14 @@ import data from "../assets/products.json";
 import Product from './Product';
 import '../css/Home.css'
 
-const Home = ({cart,setCart}) => {
+const Home = () => {
     const [products,setProducts]=useState(data);
 
   return (
 
     <div className="product-container">
         {products.map((item)=>(
-          <Product key={item.id} product={item} cart={cart} setCart={setCart}/>
+          <Product key={item.id} product={item}/>
         ))}
     </div>
   )

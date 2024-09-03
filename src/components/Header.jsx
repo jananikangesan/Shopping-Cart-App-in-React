@@ -1,8 +1,13 @@
-import React from 'react'; 
+import React, { useContext } from 'react'; 
 import {Link} from 'react-router-dom';
-import "../css/Header.css"
+import "../css/Header.css";
+import { cartContext } from '../App';
 
-const Header = ({cart}) => {
+
+const Header = () => {
+
+  const {cart,setCart}=useContext(cartContext);
+
   return (
     <div className='navbar'>
         <div className="logo">Food Cart</div>

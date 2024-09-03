@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "../css/Product.css";
+import { cartContext } from '../App';
 
 
-const Product = ({product,cart,setCart}) => {
+const Product = ({product}) => {
+
+  const {cart,setCart}=useContext(cartContext);
+
   const name=product.name.length>21 ?product.name.substring(0,20)+"..  ":product.name;
   
   const addCart=()=>{
