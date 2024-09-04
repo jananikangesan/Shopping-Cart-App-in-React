@@ -6,6 +6,7 @@ import { createContext, useState } from 'react'
 import ViewCart from './components/ViewCart'
 import { cartContext } from './components/cartContext';
 import Footer from './components/Footer'
+import Search from './components/Search'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/Cart' element={<ViewCart/>}/>
+              <Route path='/Search' element={<Search/>}/>
             </Routes>
           </div>
         </BrowserRouter>

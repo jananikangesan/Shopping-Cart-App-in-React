@@ -18,6 +18,9 @@ const Header = () => {
             <li>
                 <Link to={"/Cart"}><span className='cart-count'>{cart.length}</span>View Cart</Link>
             </li>
+            <li>
+                <Link to={"/Search"}>Search</Link>
+            </li>
         </ul>
     </div>
   )
