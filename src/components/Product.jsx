@@ -7,8 +7,6 @@ const Product = ({product}) => {
 
   const {cart,setCart}=useContext(cartContext);
 
-  const productName=product.name;
-
   const name=product.name.length>21 ?product.name.substring(0,20)+"..  ":product.name;
   
   const addCart=()=>{
@@ -26,7 +24,7 @@ const Product = ({product}) => {
 
           <div className='pop-up'>
             <img src={`${product.pic}`} alt={product.name}/>
-            <h4>{productName}</h4>
+            <h4>{product.name}</h4>
             <p>Shop: {product.shop}</p>
             <p>Food Type: {product.ftype}</p>
             <p>Price Rs:{product.amt}</p>
