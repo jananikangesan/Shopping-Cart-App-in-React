@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import data from "../assets/products.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CiSearch } from "react-icons/ci";
+import "../css/Search.css";
 
 const Search = () => {
 
@@ -10,7 +12,11 @@ const Search = () => {
     <div className="container mt-5">
       <h4 className='text-primary'>Filter Table Data</h4>
       <form className='col-md-6' >
+        <div class="input-group">
         <input type="text" className='form-control' placeholder='Search Text' onChange={(e)=>setFind(e.target.value)}/>
+        <CiSearch className='icon'/>
+        </div>
+       
       </form>
       <table className='table table-bordered table-striped mt-3'>
         <thead>

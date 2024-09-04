@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom';
 import "../css/Header.css";
 import { cartContext } from './cartContext';
 
+import { FaSearch } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 
 const Header = () => {
 
@@ -10,16 +13,16 @@ const Header = () => {
 
   return (
     <div className='navbar'>
-        <div className="logo">Food Cart</div>
+        <div className="logo"><img src='images/food-cart-logo.jpg' alt="Logo"/></div>
         <ul>
             <li>
-                <Link to={"/"}>Home</Link>
+                <Link to={"/"}><FaHome size={35}/></Link>
             </li>
             <li>
-                <Link to={"/Cart"}><span className='cart-count'>{cart.length}</span>View Cart</Link>
+                <Link to={"/Cart"}><span className='cart-count'>{cart.length}</span><FaShoppingCart size={35}/></Link>
             </li>
             <li>
-                <Link to={"/Search"}>Search</Link>
+                <Link to={"/Search"}><FaSearch size={35}/></Link>
             </li>
         </ul>
     </div>
